@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Triplifier::VERSION
   spec.authors       = ["Standa Fifik"]
   spec.email         = ["standa.fifik@gmail.com"]
-  spec.description   = %q{module to simplify conversion to RDF triplets}
-  spec.summary       = %q{module to simplify conversion to RDF triplets}
+  spec.description   = %q{Module to simplify conversion to RDF triplets}
+  spec.summary       = %q{Module to simplify conversion to RDF triplets}
   spec.homepage      = ""
   spec.license       = "MIT"
 
