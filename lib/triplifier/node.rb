@@ -25,6 +25,13 @@ module Triplifier
 					else
 						suffix = ''
 					end
+					pred = predicate.to_s.split('^^')
+					if pred.length == 2
+						predicate, suffix = pred
+						suffix = "^^#{suffix}"
+					else
+						suffix = ''
+					end
 					ttl += "#{subject} #{predicate} #{turtlified}#{suffix} .\n" unless turtlified.nil?
 					if !extras.nil? && extras.kind_of?(SimpleNode)
 						ttl += extras.to_turtle
